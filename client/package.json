@@ -1,0 +1,25 @@
+{
+  "name": "solana-staking-client",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "Akira Saito",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build",
+    "test-int": "jest int --force-exit --testTimeout=10000",
+    "new-staking": "node scripts/new-staking && yarn clean"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.30.2",
+    "bn.js": "^5.2.0",
+    "buffer-layout": "^1.2.2"
+  }
+}
